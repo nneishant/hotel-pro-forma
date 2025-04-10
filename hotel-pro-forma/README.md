@@ -16,4 +16,4 @@ This is a web-based financial forecasting tool for hotel development projects.
 🚀 Coming Soon (optional: deploy on Vercel or Netlify)
 
 ## Author
-Hemanth Pillala ([@nneishant](https://github.com/nneishant))
+Nishant Phatak([@nneishant](https://github.com/nneishant))
