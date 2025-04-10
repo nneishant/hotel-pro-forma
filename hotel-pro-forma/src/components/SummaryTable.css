@@ -1,0 +1,145 @@
+.summary-table {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 800px;
+}
+
+.summary-table h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.summary-table h3 {
+  color: #666;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+.summary-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.summary-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.summary-table td:last-child {
+  text-align: right;
+  font-weight: 500;
+}
+
+.summary-table tr.highlight td {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.expense-breakdown {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.year-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.year-tab {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  color: #666;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.year-tab:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.year-tab.active {
+  background-color: #1976d2;
+  color: #ffffff;
+  border-color: #1976d2;
+}
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.metrics-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-section h3 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.metrics-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metrics-section td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.metrics-section td:nth-child(2) {
+  text-align: right;
+  font-weight: 500;
+}
+
+.growth-cell {
+  text-align: right;
+  color: #4caf50;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
+.growth-cell.negative {
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .summary-table {
+    padding: 0.5rem;
+  }
+
+  .summary-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .metrics-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .metrics-section {
+    padding: 0.75rem;
+  }
+} 
